@@ -9,15 +9,24 @@
             <p>Room Name: <span id="room-name"></span></p>
         </section>
 
-        <section id="video-streams">
+        <section id="video-streams"></section>
 
-            <div class="video-container" id="user-container-1">
-                <div class="username-wrapper"><span class="user-name">My name</span></div>
-                <div class="video-player" id="user-1"></div>
+        <section id="controls-wrapper">
+            <div class="icon-wrapper">
+                <img id="mic-btn" class="control-icon" src="{% static 'images/microphone.png'%}" alt="mic">
             </div>
 
+            <div class="icon-wrapper">
+                <img id="camera-btn" class="control-icon" src="{% static 'images/video.png'%}" alt="camera">
+            </div>
+
+            <div class="icon-wrapper">
+                <img id="leave-btn" class="control-icon" src="{% static 'images/leave.png'%}" alt="mic">
+            </div>
         </section>
     </main>
 
+    <script src="{% static 'assets/AgoraRTC_N-4.21.0.js' %}" type="text/javascript"></script>
+    <script src="{% static 'js/streams.js' %}" type="text/javascript"></script>
 
 {% endblock %}

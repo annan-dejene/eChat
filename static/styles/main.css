@@ -46,3 +46,33 @@ body {
   margin: 2px;
   background-color: rgba(198, 202, 219, 1);
 }
+
+.video-player {
+  height: 100%;
+  width: 100%;
+}
+
+/* ---------------------------------------- Room styling | Controls ---------------------------------------- */
+
+#controls-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  column-gap: 1em;
+  position: fixed;
+  bottom: 25px;
+}
+
+.control-icon {
+  height: 25px;
+  width: 25px;
+  box-shadow: var(--shadow);
+  background-color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#leave-btn {
+  background-color: rgba(255, 80, 80, 1);
+}
